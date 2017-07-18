@@ -5,14 +5,20 @@
     "name": "cron"
   },
   "spec": {
-    "replicas": 1
+    "replicas": 1,
+    "template": {
+      "metadata": {
+        "labels": {
+          "app": "cron",
+          "image": "master_cfc_8500_default_cron_latest"
+        }
       },
       "spec": {
         "hostNetwork": false,
         "containers": [
           {
             "name": "cron",
-            "image": "master.cfc:8500/default/cron:1.2",
+            "image": "master.cfc:8500/default/cron:latest",
             "imagePullPolicy": "Always",
             "ports": [
               {
