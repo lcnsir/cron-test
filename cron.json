@@ -10,7 +10,7 @@
       "metadata": {
         "labels": {
           "app": "cron",
-          "image": "master_cfc_8500_default_cron_latest"
+          "image": "master_cfc_8500_default_cron_1.2"
         }
       },
       "spec": {
