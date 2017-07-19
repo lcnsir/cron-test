@@ -18,7 +18,7 @@
         "containers": [
           {
             "name": "cron",
-            "image": "master.cfc:8500/default/cron:latest",
+            "image": "master.cfc:8500/default/cron:1.2",
             "imagePullPolicy": "Always",
             "ports": [
               {
